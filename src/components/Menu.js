@@ -1,8 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaCalendarCheck, FaTelegram, FaMap, FaPhoneAlt } from 'react-icons/fa'
+import {
+	FaCalendarCheck,
+	FaTelegram,
+	FaMap,
+	FaPhoneAlt,
+	FaQuestion,
+} from 'react-icons/fa'
 // import { Icon32LogoVkColor } from '@vkontakte/icons'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { Link } from 'react-router-dom/dist'
 
 const Menu = () => {
 	const container = {
@@ -44,6 +51,14 @@ const Menu = () => {
 					<button className='buttons'>Instagram*</button>
 				</a> */}
 				<motion.li variants={item}>
+					<Link to={`/faq`} className='links'>
+						<button className='buttons'>
+							<FaQuestion className='icon text-yellow-700' />
+							Частые вопросы
+						</button>
+					</Link>
+				</motion.li>
+				<motion.li variants={item}>
 					<a
 						className='links'
 						href='https://n870576.yclients.com/'
@@ -51,7 +66,7 @@ const Menu = () => {
 						target='_blank'
 					>
 						<button className='buttons'>
-							<FaCalendarCheck className='icon text-slate-700' />
+							<FaCalendarCheck className='icon text-green-600' />
 							Записаться на прием
 						</button>
 					</a>
@@ -103,13 +118,13 @@ const Menu = () => {
 						target='_blank'
 					>
 						<button className='buttons'>
-							<FaPhoneAlt className='icon text-slate-800' />
+							<FaPhoneAlt className='icon text-blue-gray-900' />
 							Позвонить
 						</button>
 					</a>
 				</motion.li>
 			</div>
-			{/* <div className='mx-auto text-center px-5 font-light text-slate-500'>
+			{/* <div className='mx-auto text-center px-5 font-light text-blue-gray-900'>
 				ООО «Вега» 664011, г.Иркутск, ул.Карла Маркса, д.39 ИНН 3808114364 ОГРН
 				1043801065978
 			</div> */}
