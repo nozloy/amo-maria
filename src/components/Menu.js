@@ -22,13 +22,27 @@ const Menu = () => {
 				delayChildren: 0.1,
 			},
 		},
+		exit: {
+			opacity: 0,
+			y: 100,
+			transition: {
+				staggerChildren: 0.3,
+				delayChildren: 0.1,
+			},
+		},
 	}
 	const item = {
 		hidden: { opacity: 0, y: 100 },
 		show: { opacity: 1, y: 0 },
 	}
 	return (
-		<motion.ol variants={container} initial='hidden' animate='show'>
+		<motion.ol
+			key='menu'
+			variants={container}
+			initial='hidden'
+			animate='show'
+			exit='exit'
+		>
 			<div className='mt-5 mb-8'>
 				{/* <a
 					className='links'
