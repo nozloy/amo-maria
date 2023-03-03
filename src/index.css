@@ -8,14 +8,14 @@
 	}
 
 	.AccHeaders {
-		@apply !text-brown-50 hover:!text-yellow-600;
+		@apply !text-brown-100 hover:!text-yellow-600;
 	}
 	.AccDescription {
-		@apply !text-brown-50;
+		@apply !text-brown-50 !text-xl;
 	}
 
 	.buttons {
-		@apply neo mx-2 my-1 px-2 py-3 rounded-xl text-3xl text-gray-900 font-sans flex flex-row justify-center bg-white;
+		@apply neo mx-2 my-1 px-2 py-3 rounded-xl text-2xl text-brown-800 font-sans flex flex-row justify-center bg-white;
 	}
 
 	.links {
