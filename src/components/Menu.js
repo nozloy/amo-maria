@@ -7,6 +7,7 @@ import {
 	FaPhoneAlt,
 	FaQuestion,
 } from 'react-icons/fa'
+import { FcDiploma2 } from 'react-icons/fc'
 // import { Icon32LogoVkColor } from '@vkontakte/icons'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { Link } from 'react-router-dom/dist'
@@ -69,6 +70,14 @@ const Menu = () => {
 						<button className='buttons'>
 							<FaQuestion className='icon text-yellow-700' />
 							Частые вопросы
+						</button>
+					</Link>
+				</motion.li>
+				<motion.li variants={item}>
+					<Link to={`/cert`} className='links'>
+						<button className='buttons'>
+							<FcDiploma2 className='icon text-red-700' />
+							Дипломы и сертификаты
 						</button>
 					</Link>
 				</motion.li>
